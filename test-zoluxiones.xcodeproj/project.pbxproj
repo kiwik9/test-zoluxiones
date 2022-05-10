@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F38E1877A0E8305646D69B5 /* Pods_test_zoluxionesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9456FA65090EFCA60D0777F7 /* Pods_test_zoluxionesTests.framework */; };
+		7C1C2D75488E9A85A44BAEB3 /* Pods_test_zoluxiones_test_zoluxionesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4115BC1C40F2C0AB3B85E371 /* Pods_test_zoluxiones_test_zoluxionesUITests.framework */; };
+		E1F19367ACF20C0713768E35 /* Pods_test_zoluxiones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EE7663FBF33CEFF3E5CB20 /* Pods_test_zoluxiones.framework */; };
 		F7A40A1128299C99002BF371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A1028299C99002BF371 /* AppDelegate.swift */; };
 		F7A40A1328299C99002BF371 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A1228299C99002BF371 /* SceneDelegate.swift */; };
-		F7A40A1528299C99002BF371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A1428299C99002BF371 /* ViewController.swift */; };
-		F7A40A1828299C99002BF371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A40A1628299C99002BF371 /* Main.storyboard */; };
 		F7A40A1B28299C99002BF371 /* test_zoluxiones.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A1928299C99002BF371 /* test_zoluxiones.xcdatamodeld */; };
 		F7A40A1D28299C9A002BF371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A40A1C28299C9A002BF371 /* Assets.xcassets */; };
 		F7A40A2028299C9A002BF371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A40A1E28299C9A002BF371 /* LaunchScreen.storyboard */; };
 		F7A40A2B28299C9A002BF371 /* test_zoluxionesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A2A28299C9A002BF371 /* test_zoluxionesTests.swift */; };
 		F7A40A3528299C9A002BF371 /* test_zoluxionesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A3428299C9A002BF371 /* test_zoluxionesUITests.swift */; };
 		F7A40A3728299C9A002BF371 /* test_zoluxionesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A3628299C9A002BF371 /* test_zoluxionesUITestsLaunchTests.swift */; };
+		F7A40A5B28299DF9002BF371 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A40A5A28299DF9002BF371 /* LoginView.storyboard */; };
+		F7A40A5D28299EA9002BF371 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A5C28299EA9002BF371 /* LoginViewController.swift */; };
+		F7A40A5F28299F55002BF371 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A5E28299F55002BF371 /* LoginViewModel.swift */; };
+		F7A40A672829ACB8002BF371 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A662829ACB8002BF371 /* AuthRepository.swift */; };
+		F7A40A6A2829AD19002BF371 /* IAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A692829AD19002BF371 /* IAuthRepository.swift */; };
+		F7A40A6F2829AE03002BF371 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A6E2829AE03002BF371 /* User.swift */; };
+		F7A40A712829AE13002BF371 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A702829AE13002BF371 /* Movie.swift */; };
+		F7A40A782829BD2E002BF371 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A772829BD2E002BF371 /* ApiService.swift */; };
+		F7A40A7C2829CFEF002BF371 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A7B2829CFEF002BF371 /* LoginUseCase.swift */; };
+		F7A40A7F282AECB3002BF371 /* UiExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A7E282AECB3002BF371 /* UiExtensions.swift */; };
+		F7A40A81282AEF84002BF371 /* FetchMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A80282AEF84002BF371 /* FetchMoviesUseCase.swift */; };
+		F7A40A84282AF092002BF371 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A83282AF092002BF371 /* MovieRepository.swift */; };
+		F7A40A86282AF0BB002BF371 /* IMovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A40A85282AF0BB002BF371 /* IMovieRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +51,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CFFA89460AA7C1CE73B40C1 /* Pods-test-zoluxionesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-zoluxionesTests.release.xcconfig"; path = "Target Support Files/Pods-test-zoluxionesTests/Pods-test-zoluxionesTests.release.xcconfig"; sourceTree = "<group>"; };
+		3BB2B61407948FBA91F1994D /* Pods-test-zoluxionesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-zoluxionesTests.debug.xcconfig"; path = "Target Support Files/Pods-test-zoluxionesTests/Pods-test-zoluxionesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4115BC1C40F2C0AB3B85E371 /* Pods_test_zoluxiones_test_zoluxionesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_zoluxiones_test_zoluxionesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B3736BD6FE8DE80A59663F /* Pods-test-zoluxiones-test-zoluxionesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-zoluxiones-test-zoluxionesUITests.release.xcconfig"; path = "Target Support Files/Pods-test-zoluxiones-test-zoluxionesUITests/Pods-test-zoluxiones-test-zoluxionesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72EE7663FBF33CEFF3E5CB20 /* Pods_test_zoluxiones.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_zoluxiones.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D1D4AE7B4651C41109120D /* Pods-test-zoluxiones.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-zoluxiones.debug.xcconfig"; path = "Target Support Files/Pods-test-zoluxiones/Pods-test-zoluxiones.debug.xcconfig"; sourceTree = "<group>"; };
+		7DFA565595C619B7F9C129D9 /* Pods-test-zoluxiones-test-zoluxionesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-zoluxiones-test-zoluxionesUITests.debug.xcconfig"; path = "Target Support Files/Pods-test-zoluxiones-test-zoluxionesUITests/Pods-test-zoluxiones-test-zoluxionesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8800E7CACDD38DF2B6B03620 /* Pods-test-zoluxiones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-zoluxiones.release.xcconfig"; path = "Target Support Files/Pods-test-zoluxiones/Pods-test-zoluxiones.release.xcconfig"; sourceTree = "<group>"; };
+		9456FA65090EFCA60D0777F7 /* Pods_test_zoluxionesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_zoluxionesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A40A0D28299C99002BF371 /* test-zoluxiones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-zoluxiones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A40A1028299C99002BF371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7A40A1228299C99002BF371 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F7A40A1428299C99002BF371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F7A40A1728299C99002BF371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7A40A1A28299C99002BF371 /* test_zoluxiones.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test_zoluxiones.xcdatamodel; sourceTree = "<group>"; };
 		F7A40A1C28299C9A002BF371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7A40A1F28299C9A002BF371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +72,19 @@
 		F7A40A3028299C9A002BF371 /* test-zoluxionesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-zoluxionesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A40A3428299C9A002BF371 /* test_zoluxionesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_zoluxionesUITests.swift; sourceTree = "<group>"; };
 		F7A40A3628299C9A002BF371 /* test_zoluxionesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_zoluxionesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7A40A5A28299DF9002BF371 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
+		F7A40A5C28299EA9002BF371 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F7A40A5E28299F55002BF371 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F7A40A662829ACB8002BF371 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		F7A40A692829AD19002BF371 /* IAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthRepository.swift; sourceTree = "<group>"; };
+		F7A40A6E2829AE03002BF371 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F7A40A702829AE13002BF371 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F7A40A772829BD2E002BF371 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		F7A40A7B2829CFEF002BF371 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		F7A40A7E282AECB3002BF371 /* UiExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiExtensions.swift; sourceTree = "<group>"; };
+		F7A40A80282AEF84002BF371 /* FetchMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesUseCase.swift; sourceTree = "<group>"; };
+		F7A40A83282AF092002BF371 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		F7A40A85282AF0BB002BF371 /* IMovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMovieRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F19367ACF20C0713768E35 /* Pods_test_zoluxiones.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F38E1877A0E8305646D69B5 /* Pods_test_zoluxionesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +108,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1C2D75488E9A85A44BAEB3 /* Pods_test_zoluxiones_test_zoluxionesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		589C4F71D1E27DBBED1EE2C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75D1D4AE7B4651C41109120D /* Pods-test-zoluxiones.debug.xcconfig */,
+				8800E7CACDD38DF2B6B03620 /* Pods-test-zoluxiones.release.xcconfig */,
+				7DFA565595C619B7F9C129D9 /* Pods-test-zoluxiones-test-zoluxionesUITests.debug.xcconfig */,
+				54B3736BD6FE8DE80A59663F /* Pods-test-zoluxiones-test-zoluxionesUITests.release.xcconfig */,
+				3BB2B61407948FBA91F1994D /* Pods-test-zoluxionesTests.debug.xcconfig */,
+				0CFFA89460AA7C1CE73B40C1 /* Pods-test-zoluxionesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DEB3676172A7A7B09831C3FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72EE7663FBF33CEFF3E5CB20 /* Pods_test_zoluxiones.framework */,
+				4115BC1C40F2C0AB3B85E371 /* Pods_test_zoluxiones_test_zoluxionesUITests.framework */,
+				9456FA65090EFCA60D0777F7 /* Pods_test_zoluxionesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F7A40A0428299C99002BF371 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +145,8 @@
 				F7A40A2928299C9A002BF371 /* test-zoluxionesTests */,
 				F7A40A3328299C9A002BF371 /* test-zoluxionesUITests */,
 				F7A40A0E28299C99002BF371 /* Products */,
+				589C4F71D1E27DBBED1EE2C8 /* Pods */,
+				DEB3676172A7A7B09831C3FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +163,13 @@
 		F7A40A0F28299C99002BF371 /* test-zoluxiones */ = {
 			isa = PBXGroup;
 			children = (
-				F7A40A1028299C99002BF371 /* AppDelegate.swift */,
-				F7A40A1228299C99002BF371 /* SceneDelegate.swift */,
-				F7A40A1428299C99002BF371 /* ViewController.swift */,
-				F7A40A1628299C99002BF371 /* Main.storyboard */,
-				F7A40A1C28299C9A002BF371 /* Assets.xcassets */,
-				F7A40A1E28299C9A002BF371 /* LaunchScreen.storyboard */,
 				F7A40A2128299C9A002BF371 /* Info.plist */,
-				F7A40A1928299C99002BF371 /* test_zoluxiones.xcdatamodeld */,
+				F7A40A6B2829ADBB002BF371 /* Common */,
+				F7A40A4D28299D5E002BF371 /* Infrastructure */,
+				F7A40A4928299D44002BF371 /* Data */,
+				F7A40A4528299D2A002BF371 /* Domain */,
+				F7A40A4428299D25002BF371 /* Presentation */,
+				F7A40A4328299D1A002BF371 /* Application */,
 			);
 			path = "test-zoluxiones";
 			sourceTree = "<group>";
@@ -130,6 +191,218 @@
 			path = "test-zoluxionesUITests";
 			sourceTree = "<group>";
 		};
+		F7A40A4328299D1A002BF371 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A1028299C99002BF371 /* AppDelegate.swift */,
+				F7A40A1228299C99002BF371 /* SceneDelegate.swift */,
+				F7A40A1C28299C9A002BF371 /* Assets.xcassets */,
+				F7A40A1E28299C9A002BF371 /* LaunchScreen.storyboard */,
+				F7A40A1928299C99002BF371 /* test_zoluxiones.xcdatamodeld */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F7A40A4428299D25002BF371 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A5328299DBC002BF371 /* Login */,
+				F7A40A5228299DB2002BF371 /* MovieDetail */,
+				F7A40A5128299DAC002BF371 /* MovieList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F7A40A4528299D2A002BF371 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A4828299D3B002BF371 /* Interfaces */,
+				F7A40A4728299D35002BF371 /* UseCases */,
+				F7A40A4628299D2F002BF371 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F7A40A4628299D2F002BF371 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A6E2829AE03002BF371 /* User.swift */,
+				F7A40A702829AE13002BF371 /* Movie.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F7A40A4728299D35002BF371 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A7B2829CFEF002BF371 /* LoginUseCase.swift */,
+				F7A40A80282AEF84002BF371 /* FetchMoviesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F7A40A4828299D3B002BF371 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A682829AD0C002BF371 /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F7A40A4928299D44002BF371 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A4C28299D53002BF371 /* Persistent */,
+				F7A40A4B28299D4D002BF371 /* Network */,
+				F7A40A4A28299D48002BF371 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F7A40A4A28299D48002BF371 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A722829B9D6002BF371 /* Utils */,
+				F7A40A662829ACB8002BF371 /* AuthRepository.swift */,
+				F7A40A83282AF092002BF371 /* MovieRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F7A40A4B28299D4D002BF371 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A772829BD2E002BF371 /* ApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F7A40A4C28299D53002BF371 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		F7A40A4D28299D5E002BF371 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A4E28299D65002BF371 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		F7A40A4E28299D65002BF371 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F7A40A5128299DAC002BF371 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A5828299DE8002BF371 /* ViewModel */,
+				F7A40A5728299DE3002BF371 /* View */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		F7A40A5228299DB2002BF371 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A5928299DEE002BF371 /* ViewModel */,
+				F7A40A5628299DDF002BF371 /* View */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		F7A40A5328299DBC002BF371 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A5528299DD5002BF371 /* View */,
+				F7A40A5428299DD0002BF371 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F7A40A5428299DD0002BF371 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A5E28299F55002BF371 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F7A40A5528299DD5002BF371 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A5A28299DF9002BF371 /* LoginView.storyboard */,
+				F7A40A5C28299EA9002BF371 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A40A5628299DDF002BF371 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A40A5728299DE3002BF371 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A40A5828299DE8002BF371 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F7A40A5928299DEE002BF371 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F7A40A682829AD0C002BF371 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A692829AD19002BF371 /* IAuthRepository.swift */,
+				F7A40A85282AF0BB002BF371 /* IMovieRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F7A40A6B2829ADBB002BF371 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A7D282AECA4002BF371 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F7A40A722829B9D6002BF371 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F7A40A7D282AECA4002BF371 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7A40A7E282AECB3002BF371 /* UiExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +410,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7A40A3A28299C9A002BF371 /* Build configuration list for PBXNativeTarget "test-zoluxiones" */;
 			buildPhases = (
+				5D2638D992C5D888E1A5888B /* [CP] Check Pods Manifest.lock */,
 				F7A40A0928299C99002BF371 /* Sources */,
 				F7A40A0A28299C99002BF371 /* Frameworks */,
 				F7A40A0B28299C99002BF371 /* Resources */,
+				FC0E9CC5BB73565641B09B8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +429,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7A40A3D28299C9A002BF371 /* Build configuration list for PBXNativeTarget "test-zoluxionesTests" */;
 			buildPhases = (
+				185799E9A444AC1C98E99061 /* [CP] Check Pods Manifest.lock */,
 				F7A40A2228299C9A002BF371 /* Sources */,
 				F7A40A2328299C9A002BF371 /* Frameworks */,
 				F7A40A2428299C9A002BF371 /* Resources */,
@@ -172,9 +448,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7A40A4028299C9A002BF371 /* Build configuration list for PBXNativeTarget "test-zoluxionesUITests" */;
 			buildPhases = (
+				F827FE3729C47802CF8389AA /* [CP] Check Pods Manifest.lock */,
 				F7A40A2C28299C9A002BF371 /* Sources */,
 				F7A40A2D28299C9A002BF371 /* Frameworks */,
 				F7A40A2E28299C9A002BF371 /* Resources */,
+				3BA0D7E92CC03F0084481413 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,7 +514,7 @@
 			files = (
 				F7A40A2028299C9A002BF371 /* LaunchScreen.storyboard in Resources */,
 				F7A40A1D28299C9A002BF371 /* Assets.xcassets in Resources */,
-				F7A40A1828299C99002BF371 /* Main.storyboard in Resources */,
+				F7A40A5B28299DF9002BF371 /* LoginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +534,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		185799E9A444AC1C98E99061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-zoluxionesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BA0D7E92CC03F0084481413 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test-zoluxiones-test-zoluxionesUITests/Pods-test-zoluxiones-test-zoluxionesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test-zoluxiones-test-zoluxionesUITests/Pods-test-zoluxiones-test-zoluxionesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test-zoluxiones-test-zoluxionesUITests/Pods-test-zoluxiones-test-zoluxionesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2638D992C5D888E1A5888B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-zoluxiones-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F827FE3729C47802CF8389AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-zoluxiones-test-zoluxionesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0E9CC5BB73565641B09B8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test-zoluxiones/Pods-test-zoluxiones-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test-zoluxiones/Pods-test-zoluxiones-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test-zoluxiones/Pods-test-zoluxiones-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7A40A0928299C99002BF371 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A40A1528299C99002BF371 /* ViewController.swift in Sources */,
 				F7A40A1128299C99002BF371 /* AppDelegate.swift in Sources */,
+				F7A40A5F28299F55002BF371 /* LoginViewModel.swift in Sources */,
+				F7A40A81282AEF84002BF371 /* FetchMoviesUseCase.swift in Sources */,
 				F7A40A1328299C99002BF371 /* SceneDelegate.swift in Sources */,
+				F7A40A84282AF092002BF371 /* MovieRepository.swift in Sources */,
+				F7A40A86282AF0BB002BF371 /* IMovieRepository.swift in Sources */,
+				F7A40A672829ACB8002BF371 /* AuthRepository.swift in Sources */,
+				F7A40A712829AE13002BF371 /* Movie.swift in Sources */,
+				F7A40A6A2829AD19002BF371 /* IAuthRepository.swift in Sources */,
+				F7A40A782829BD2E002BF371 /* ApiService.swift in Sources */,
+				F7A40A6F2829AE03002BF371 /* User.swift in Sources */,
+				F7A40A5D28299EA9002BF371 /* LoginViewController.swift in Sources */,
 				F7A40A1B28299C99002BF371 /* test_zoluxiones.xcdatamodeld in Sources */,
+				F7A40A7C2829CFEF002BF371 /* LoginUseCase.swift in Sources */,
+				F7A40A7F282AECB3002BF371 /* UiExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +693,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F7A40A1628299C99002BF371 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7A40A1728299C99002BF371 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F7A40A1E28299C9A002BF371 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +820,7 @@
 		};
 		F7A40A3B28299C9A002BF371 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D1D4AE7B4651C41109120D /* Pods-test-zoluxiones.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,7 +831,8 @@
 				INFOPLIST_FILE = "test-zoluxiones/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,6 +850,7 @@
 		};
 		F7A40A3C28299C9A002BF371 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8800E7CACDD38DF2B6B03620 /* Pods-test-zoluxiones.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,7 +861,8 @@
 				INFOPLIST_FILE = "test-zoluxiones/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,6 +880,7 @@
 		};
 		F7A40A3E28299C9A002BF371 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB2B61407948FBA91F1994D /* Pods-test-zoluxionesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +901,7 @@
 		};
 		F7A40A3F28299C9A002BF371 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CFFA89460AA7C1CE73B40C1 /* Pods-test-zoluxionesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +922,7 @@
 		};
 		F7A40A4128299C9A002BF371 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DFA565595C619B7F9C129D9 /* Pods-test-zoluxiones-test-zoluxionesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +941,7 @@
 		};
 		F7A40A4228299C9A002BF371 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B3736BD6FE8DE80A59663F /* Pods-test-zoluxiones-test-zoluxionesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

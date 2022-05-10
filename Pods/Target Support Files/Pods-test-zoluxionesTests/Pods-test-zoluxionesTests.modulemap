@@ -1,0 +1,6 @@
+framework module Pods_test_zoluxionesTests {
+  umbrella header "Pods-test-zoluxionesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
