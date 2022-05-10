@@ -12,9 +12,12 @@ class LoginViewModel: NSObject {
     typealias LoginListener = (_ user : User?, _ message : String) -> Void
     private var loginListener : LoginListener?
     
+    private let loginUseCase = LoginUseCase(authRepository: AuthRepository())
+    
+    private let fetchMoviesUseCase = FetchMoviesUseCase(movieRepository: MovieRepository())
+    
     public func validateAuth(_ username: String, _ password: String) {
         let user = User(username: username, password: password)
-        let loginUseCase = LoginUseCase(authRepository: AuthRepository())
         _ = loginUseCase.excute(query: user).subscribe { result in
             let message = (result ? "Inicio de Sesion Exitoso." : "Usuario y/o contrasena incorrectos.")
             self.loginListener?(user, message)
@@ -23,6 +26,13 @@ class LoginViewModel: NSObject {
         }
     }
     
+    public func fetchMovies(){
+        _ = fetchMoviesUseCase.excute(query: 1).subscribe { result in
+            let message = result
+        } onFailure: { Error in
+            let error = Error
+        }
+    }
     
     public func onLoginListener(listener: @escaping LoginListener) {
         self.loginListener = listener

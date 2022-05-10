@@ -20,7 +20,14 @@ extension MovieRepository: IMovieRepository {
             provider.request(.fetchMovies(page: page)) { result in
                 switch result {
                 case let .success(resp):
-                    single(.success([]))
+                    do {
+                        let moviesModel = try resp.map(FetchMovieResponse.self)
+                        let movies = MovieModelMapper().transformToMovie(moviesModel.results)
+                        single(.success(movies))
+                    }
+                    catch {
+                        single(.success([]))
+                    }
                     break
                 case let .failure(error):
                     single(.failure(error))

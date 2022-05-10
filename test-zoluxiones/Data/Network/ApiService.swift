@@ -9,7 +9,7 @@ import Moya
 import Foundation
 
 enum MyApiService {
-    static private let apiKey = ""
+    static private let apiKey = "507e2ac647e014f2a7e722713f2eeaa9"
     case fetchMovies(page: Int8)
 }
 
@@ -37,8 +37,7 @@ extension MyApiService: TargetType {
   public var task: Task {
     switch self {
     case .fetchMovies:
-          return .requestParameters(parameters: ["page": 1,
-                                                 "apikey": MyApiService.apiKey], encoding: URLEncoding.default)
+          return .requestParameters(parameters: ["page": 1, "api_key": MyApiService.apiKey], encoding: URLEncoding.default)
     }
   }
 

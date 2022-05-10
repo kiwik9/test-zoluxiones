@@ -8,5 +8,10 @@
 import Foundation
 
 struct Movie {
-    
+    let id : Int
+    let title : String
+    let description : String
+    let posterImage : String
+    let releadeDate : String
+    let average : Double
 }
