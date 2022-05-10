@@ -10,17 +10,17 @@ import Foundation
 
 class MovieListViewModel: NSObject {
 
-    typealias FetchMovieListener = (_ status : ResponseStatus?, _ message : String) -> Void
+    typealias FetchMovieListener = (_ movies: [Movie]?, _ message : String) -> Void
     private var fetchMovieListener : FetchMovieListener?
         
     private let fetchMoviesUseCase = FetchMoviesUseCase(movieRepository: MovieRepository())
 
     
     public func fetchMovies(){
-        _ = fetchMoviesUseCase.excute(query: 1).subscribe { _ in
-            self.fetchMovieListener?(ResponseStatus.OK, "Exito.")
+        _ = fetchMoviesUseCase.excute(query: 1).subscribe { result in
+            self.fetchMovieListener?(result, "Exito.")
         } onFailure: { Error in
-            self.fetchMovieListener?(ResponseStatus.ERROR, "Error al consultar las peliculas.")
+            self.fetchMovieListener?(nil, "Error al consultar las peliculas.")
         }
     }
     

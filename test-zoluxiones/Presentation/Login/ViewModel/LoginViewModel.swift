@@ -10,12 +10,10 @@ import Foundation
 class LoginViewModel: NSObject {
 
     typealias LoginListener = (_ user : User?, _ message : String) -> Void
+    
     private var loginListener : LoginListener?
-    
     private let loginUseCase = LoginUseCase(authRepository: AuthRepository())
-    
-    private let fetchMoviesUseCase = FetchMoviesUseCase(movieRepository: MovieRepository())
-    
+        
     public func validateAuth(_ username: String, _ password: String) {
         let user = User(username: username, password: password)
         _ = loginUseCase.excute(query: user).subscribe { result in
@@ -23,14 +21,6 @@ class LoginViewModel: NSObject {
             self.loginListener?(user, message)
         } onFailure: { Error in
             self.loginListener?(nil, "Error.")
-        }
-    }
-    
-    public func fetchMovies(){
-        _ = fetchMoviesUseCase.excute(query: 1).subscribe { result in
-            let message = result
-        } onFailure: { Error in
-            let error = Error
         }
     }
     

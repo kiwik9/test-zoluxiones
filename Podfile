@@ -4,9 +4,10 @@
 target 'test-zoluxiones' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'Moya', '~> 14.0'
+  pod 'Moya', '~> 15.0'
   pod 'RxSwift'
-  pod 'Moya-ModelMapper', '~> 10.0'
+  pod 'Kingfisher', '~> 5.0'
+
 
   # Pods for test-zoluxiones
 
