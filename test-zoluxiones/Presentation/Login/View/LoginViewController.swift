@@ -21,12 +21,12 @@ class LoginViewController: UIViewController {
     }
     
     private func initListener(){
-        viewModel.onLoginListener { (userResponse, message) in
-            guard let user = userResponse else {
+        viewModel.onLoginListener { (response, message) in
+            if (response == ResponseStatus.ERROR) {
                 self.showToast(message: message )
                 return
             }
-            self.showToast(message: message )
+            self.segueTo(storyboard: "MovieListView", controller: "MovieListViewController", presentation: .fullScreen, transition: .coverVertical)
         }
     }
     

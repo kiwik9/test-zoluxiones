@@ -9,7 +9,7 @@ import Foundation
 
 class LoginViewModel: NSObject {
 
-    typealias LoginListener = (_ user : User?, _ message : String) -> Void
+    typealias LoginListener = (_ response : ResponseStatus, _ message : String) -> Void
     
     private var loginListener : LoginListener?
     private let loginUseCase = LoginUseCase(authRepository: AuthRepository())
@@ -17,10 +17,10 @@ class LoginViewModel: NSObject {
     public func validateAuth(_ username: String, _ password: String) {
         let user = User(username: username, password: password)
         _ = loginUseCase.excute(query: user).subscribe { result in
-            let message = (result ? "Inicio de Sesion Exitoso." : "Usuario y/o contrasena incorrectos.")
-            self.loginListener?(user, message)
+            let message = (result  ? "Inicio de Sesion Exitoso." : "Usuario y/o contrasena incorrectos.")
+            self.loginListener?( (result ? ResponseStatus.OK : ResponseStatus.ERROR) , message)
         } onFailure: { Error in
-            self.loginListener?(nil, "Error.")
+            self.loginListener?(ResponseStatus.ERROR, "Error.")
         }
     }
     

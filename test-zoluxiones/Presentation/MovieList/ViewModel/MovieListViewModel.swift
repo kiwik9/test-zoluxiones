@@ -16,8 +16,8 @@ class MovieListViewModel: NSObject {
     private let fetchMoviesUseCase = FetchMoviesUseCase(movieRepository: MovieRepository())
 
     
-    public func fetchMovies(){
-        _ = fetchMoviesUseCase.excute(query: 1).subscribe { result in
+    public func fetchMovies(page: Int8){
+        _ = fetchMoviesUseCase.excute(query: page).subscribe { result in
             self.fetchMovieListener?(result, "Exito.")
         } onFailure: { Error in
             self.fetchMovieListener?(nil, "Error al consultar las peliculas.")

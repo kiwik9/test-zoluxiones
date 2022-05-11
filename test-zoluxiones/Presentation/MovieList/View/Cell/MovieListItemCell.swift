@@ -34,6 +34,6 @@ class MoviesListItemCell: UITableViewCell {
         self.titleLabel.text = viewModel.title
         self.releaseLabel.text = viewModel.releaseDate
         self.descripctionLabel.text = viewModel.description
-        self.movieImageView.kf.setImage(with: URL( PictureUtil().getPhotoUrl(viewModel.image) ))
+        self.movieImageView.kf.setImage(with: URL(string: PictureUtil().getPhotoUrl(viewModel.image!) ))
     }
 }
